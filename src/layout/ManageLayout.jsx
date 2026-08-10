@@ -1,3 +1,4 @@
+import About from "../components/About/About";
 import Header from "../components/header";
 import Hero from "../components/Hero/Hero";
 
@@ -25,6 +26,7 @@ return(
 <Header/>
 
 <Hero/>
+
 </div>
 
 </div>

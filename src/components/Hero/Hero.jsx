@@ -1,10 +1,10 @@
 import Button from "../button";
-
+import About from "../About/About";
 const Hero = () => {
 
 return(
 <main className="border border-P-Blue950 h-auto max-w-6xl w-full font-Be-Vietnam-Pro   ">
-    <section className="p-3 h-auto w-full border flex flex-col gap-3 items-center border-cyan-400 mb-2 ">
+    <section className="p-3 h-auto w-full border flex flex-col gap-3 items-center border-cyan-400  ">
         <picture>
           <img src="/images/illustration-intro.svg" alt="hero-image" />
         </picture>
@@ -20,7 +20,7 @@ return(
             <Button className="bg-P-Orange400 shadow-md shadow-P-Orange400 rounded-full py-3  w-29 text-xs font-medium text-N-Graye50">Get Started</Button>
     </section>
 
-
+<About/>
 
 </main>
 )

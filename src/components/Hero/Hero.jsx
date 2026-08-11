@@ -3,7 +3,7 @@ import About from "../About/About";
 const Hero = () => {
 
 return(
-<main className="border border-P-Blue950 h-auto max-w-6xl w-full font-Be-Vietnam-Pro   ">
+<main className="border border-P-Blue950 h-auto max-w-7xl w-full font-Be-Vietnam-Pro   ">
     <section className="p-3 h-auto w-full border flex flex-col gap-3 items-center border-cyan-400  ">
         <picture>
           <img src="/images/illustration-intro.svg" alt="hero-image" />

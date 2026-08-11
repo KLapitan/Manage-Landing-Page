@@ -1,3 +1,4 @@
+import ImageSlider from "../ImageSlider/imageSlider";
 const About = () => {
 
 const manageAboutDesc = [
@@ -20,16 +21,6 @@ const manageAboutDesc = [
 
 
 ];
-
-
-
-
-const manageSlider =[
-{id:0 , name:"Anisha Li", profileLogo:"/images/avatar-anisha.png"},
-{id:1 , name:"Ali Bravo", profileLogo:"/images/avatar-ali.png"},
-{id:2 , name:"Richard Watts", profileLogo:"/images/avatar-richard.png"},
-{id:3 , name:"Shanai Gough", profileLogo:"/images/avatar-shanai.png"},
-]
 
 return (
 <section className=" border h-auto w-full " >
@@ -67,7 +58,7 @@ return (
 
 
 
-
+<ImageSlider/>
 
 
 

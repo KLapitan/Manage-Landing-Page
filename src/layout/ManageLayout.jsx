@@ -22,7 +22,7 @@ return(
 
 </div>
 
-<div className="relative z-10 w-full sm:flex sm:flex-col sm:items-center ">
+<div className="relative z-10 w-full sm:flex sm:flex-col sm:items-center   ">
 <Header/>
 
 <Hero/>

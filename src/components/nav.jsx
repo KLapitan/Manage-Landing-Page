@@ -11,7 +11,7 @@ const manageLinks =[" Pricing",
 
 return (
 <nav className="h-20 border border-amber-500 flex items-center w-full justify-center ">
-  <section className="flex flex-row justify-between  border max-w-7xl w-full  ">
+  <section className="flex flex-row justify-between items-center  border max-w-7xl w-full  ">
         <picture>
           <img src="/images/logo.svg" alt="logo" />
         </picture>
@@ -28,7 +28,7 @@ return (
         
         </ul>
 
-        <Button className="border hidden sm:inline-block">Get Started</Button>
+        <Button className=" hidden sm:inline-block bg-P-Orange400 shadow-md shadow-P-Orange400/75 rounded-full py-3  w-29 text-xs font-medium text-N-Graye50">Get Started</Button>
   </section>
 
 </nav>

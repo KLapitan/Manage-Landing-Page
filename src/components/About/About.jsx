@@ -1,4 +1,7 @@
+import Button from "../button";
 import ImageSlider from "../ImageSlider/imageSlider";
+
+
 const About = () => {
 
 const manageAboutDesc = [
@@ -55,10 +58,16 @@ return (
     </ul>
 
 
+  <div className="h-auto w-full flex flex-col gap-1  items-center  mt-10 mb-10 p-2 border">
+    <div className="w-full flex flex-col gap-17 items-center border">
+    <h2 className="text-2xl text-P-Blue950 font-bold"> What they’ve said </h2>
 
 
-
-<ImageSlider/>
+  <ImageSlider/>
+    </div>
+  
+   <Button className="bg-P-Orange400 shadow-md shadow-P-Orange400/75 rounded-full py-3  w-29 text-xs font-medium text-N-Graye50">Get Started</Button>
+  </div>
 
 
 
@@ -66,4 +75,4 @@ return (
 
 )
 }
-export default About
+export default About;

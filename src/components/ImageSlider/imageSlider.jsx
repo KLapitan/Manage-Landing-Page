@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import { useState } from "react";
 
 const ImageSlider = () => {
@@ -28,9 +28,9 @@ prev === manageSlider.length -1 ? 0 : prev + 1
 
 
 return(
-<section className="h-auto w-full p-2 font-Be-Vietnam-Pro mt-40">
+<section className="h-auto w-full  font-Be-Vietnam-Pro ">
 
-      <div className="flex flex-col h-90  p-2 sm:hidden">
+      <div className="flex flex-col h-auto p-2 sm:hidden">
           {personFeedbacks && (
           <div key={personFeedbacks.id} className="relative flex flex-col items-center  h-55 w-full justify-center gap-4  bg-gray-300/20" onClick={handleMoveSlider}>
             <img src={personFeedbacks.profileLogo} alt={personFeedbacks.name} className="w-20 h-20 absolute -top-10" />  

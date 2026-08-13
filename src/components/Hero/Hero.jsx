@@ -17,7 +17,7 @@ return(
 
 
         </div>
-            <Button className="bg-P-Orange400 shadow-md shadow-P-Orange400 rounded-full py-3  w-29 text-xs font-medium text-N-Graye50">Get Started</Button>
+            <Button className="bg-P-Orange400 shadow-md shadow-P-Orange400/75 rounded-full py-3  w-29 text-xs font-medium text-N-Graye50">Get Started</Button>
     </section>
 
 <About/>

@@ -1,6 +1,9 @@
-import About from "../components/About/About";
+
 import Header from "../components/header";
 import Hero from "../components/Hero/Hero";
+import CTA from "../components/CTA";
+import Footer from "../components/footer";
+
 
 const Layout = () => {
 return(
@@ -26,7 +29,8 @@ return(
 <Header/>
 
 <Hero/>
-
+<CTA/>
+<Footer/> 
 </div>
 
 </div>

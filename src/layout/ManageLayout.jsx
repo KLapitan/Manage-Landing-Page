@@ -9,7 +9,7 @@ const Layout = () => {
 return(
 <div className="relative overflow-x-hidden max-h-auto h-screen border-4 border-green-800  ">
 
-<div className="absolute z-0 w-90 h-90  -top-10  -right-20  md:w-130 md:h-130  md:-right-5 md:-top-18 ">
+<div className="absolute z-0 w-90 h-90  -top-10  -right-20  sm:w-190 sm:h-195  sm:-right-15 sm:-top-29 ">
 {/* bandage like pattern   */}
 <picture >
 <img src="/images/bg-tablet-pattern.svg" alt="pattern-logo" className="w-full h-full"/>

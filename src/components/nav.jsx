@@ -10,13 +10,13 @@ const manageLinks =[" Pricing",
 
 
 return (
-<nav className="h-20 border border-amber-500 flex items-center w-full justify-center ">
-  <section className="flex flex-row justify-between items-center  border max-w-7xl w-full  ">
+<nav className="h-30 border border-amber-500 flex items-center w-full justify-center ">
+  <section className="flex flex-row justify-between items-center  border max-w-6xl w-full  ">
         <picture>
           <img src="/images/logo.svg" alt="logo" />
         </picture>
 
-        <ul className="hidden sm:flex flex-row gap-5 w-auto border  ">
+        <ul className="hidden sm:flex flex-row gap-10 w-auto border  ">
             {manageLinks.map((link,index) => (
             <li key={index}>
               {link}

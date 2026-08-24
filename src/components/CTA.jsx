@@ -5,11 +5,12 @@ return(
 <section className="bg-P-Orange400 h-75 w-full max-w-full md:h-50 relative flex   items-center justify-center font-Be-Vietnam-Pro p-2 overflow-clip">
 
 <picture>
-  <img src="./images/bg-simplify-section-mobile.svg" alt="prefoorter image" className="absolute left-0 top-0 z-10" />
+  <img src="./images/bg-simplify-section-mobile.svg" alt="prefoorter image mobile" className="absolute sm:hidden left-0 top-0 z-10" />
+  <img src="./images/bg-simplify-section-desktop.svg" alt="prefoorter image desktop" className="hidden absolute sm:block left-50 -top-34 z-0" />
 </picture>
 
-<div className="flex flex-col sm:flex-row items-center  gap-2 sm:justify-between w-full  max-w-7xl border ">
-  <h2 className="text-N-Graye50 text-center max-w-lg w-55 sm:w-xs sm:text-left p-2 text-2xl  border font-semibold  ">
+<div className="flex flex-col sm:flex-row items-center  gap-2 sm:justify-between w-full  max-w-7xl border z-10 ">
+  <h2 className="text-N-Graye50 text-center max-w-xl lg:w-lg w-55 sm:w-xs sm:text-left p-2 text-2xl md:text-4xl  border font-semibold lg:font-medium  ">
   Simplify how your team works today.</h2>
  <Button className="bg-N-Graye50 shadow-md shadow-P-Orange400/75 rounded-full py-3   w-29 text-xs font-medium text-P-Orange400  hover:bg-P-Orange400 hover:text-N-Graye50 ">Get Started</Button>
 

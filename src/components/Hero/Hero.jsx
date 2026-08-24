@@ -1,12 +1,12 @@
 import Button from "../button";
-import About from "../About/About";
+
 const Hero = () => {
 
 return(
 <main className="border border-P-Blue950 h-auto max-w-6xl w-full font-Be-Vietnam-Pro   ">
-    <section className="p-3 h-auto w-full border flex flex-col gap-3 items-center border-cyan-400 sm:flex-row-reverse sm:justify-between mt-15 ">
+    <section className="p-3 h-auto w-full border flex flex-col gap-3 items-center border-cyan-400 sm:flex-row-reverse sm:justify-between sm:mt-15 ">
         <picture>
-          <img src="/images/illustration-intro.svg" alt="hero-image"  className="border md:w-140 md:h-125 "/>
+          <img src="/images/illustration-intro.svg" alt="hero-image"  className=" md:w-140 md:h-125 "/>
         </picture>
 
         {/* intro description */}
@@ -21,7 +21,7 @@ return(
             <Button className="bg-P-Orange400 shadow-md shadow-P-Orange400/75 rounded-full py-3  w-29 text-xs font-medium text-N-Graye50 sm:hidden">Get Started</Button>
     </section>
 
-<About/>
+
 
 </main>
 )

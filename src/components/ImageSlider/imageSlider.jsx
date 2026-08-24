@@ -47,14 +47,16 @@ return(
          </div>     
       </div>
 
+  {/* viewporton largeview wide */}
+    <div className="w-full overflow-hidden  border lg:h-auto  ">
 
-      <ul className="hidden sm:grid md:grid-cols-2 lg:grid-cols-4  gap-4 sm:gap-12 lg:gap-3 w-full p-2 lg:p-0 lg:mb-5">
+      <ul className="hidden sm:grid md:grid-cols-2 gap-4 sm:gap-12  w-full p-2 lg:flex lg:p-0 lg:mb-5 lg:w-max  lg:-translate-x-18  h-auto lg:mt-20 lg:gap-7 sm:mt-10">
         {manageSlider.map((feedback) => (
-        <li  className="relative h-auto  lg:h-45 bg-gray-300/20 p-2 lg:p-1">
+        <li  className="relative h-auto  lg:h-45 bg-gray-100 p-2 lg:p-1 lg:w-130">
           <span className="flex flex-col gap-2  items-center justify-center">
             <img src={feedback.profileLogo} alt={feedback.name} className="w-20 h-20 lg:w-15 lg:h-15 sm:absolute sm:-top-10" />          
             <span className="text-P-Blue950 sm:mt-15 lg:mt-10 font-bold text-md">{feedback.name}</span>
-            <span className="text-sm lg:text-xs   text-center w-80 sm:w-auto leading-5 text-black/60 mb-10  ">{feedback.feedback}</span>
+            <span className="text-sm lg:text-md  lg:p-3   text-center w-80 sm:w-auto lg:w-110 leading-5 text-black/60 mb-10  ">{feedback.feedback}</span>
           
           </span>
         
@@ -62,6 +64,7 @@ return(
         ))}
       
       </ul>
+    </div>
 
     
 </section>

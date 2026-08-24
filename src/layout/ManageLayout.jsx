@@ -1,6 +1,7 @@
 
 import Header from "../components/header";
 import Hero from "../components/Hero/Hero";
+import About from "../components/About/About";
 import CTA from "../components/CTA";
 import Footer from "../components/footer";
 
@@ -30,12 +31,13 @@ return(
 <Header/>
 
 <Hero/>
+<About/>
 <CTA/>
 <Footer/> 
 </div>
 
  {/* largeview left side */}
-<div className="absolute z-2 w-133 h-130  md:-bottom-183  md:-left-53 ">
+<div className="absolute z-0 w-190 h-195 hidden sm:block md:-bottom-273  md:-left-113 ">
 {/* bandage like pattern   */}
 <picture >
 <img src="/images/bg-tablet-pattern.svg" alt="pattern-logo" className="w-full h-full"/>

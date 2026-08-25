@@ -1,4 +1,6 @@
 
+import { useEffect } from "react";
+import { useRef } from "react";
 import { useState } from "react";
 
 const ImageSlider = () => {
@@ -13,6 +15,16 @@ const manageSlider =[
 },
 ];
 
+// for slider  starting based on chopped design given and also we can scroll based on the width of the images
+const sliderRef= useRef(null)
+
+
+useEffect(() => {
+if(sliderRef.current){
+sliderRef.current.scrollLeft = 100;
+}
+
+},[])
 
 const personFeedbacks = manageSlider[currentIndex];
 
@@ -39,7 +51,7 @@ return(
           </div>
           )} 
 
-          
+                {/*circles for current images  */}
        <div className="flex flex-row gap-1  w-full h-10 items-center justify-center ">
          {[0,1,2,3].map((_,index) => (
             <span key={index} className={`border-2 border-P-Orange400 w-2 h-2 rounded-full ${currentIndex === index ? "bg-P-Orange400" : "bg-white"} `} ></span>
@@ -48,9 +60,11 @@ return(
       </div>
 
   {/* viewporton largeview wide */}
-    <div className="w-full overflow-hidden  border lg:h-auto  ">
+    <div   ref={sliderRef} className="w-full overflow-hidden  overflow-x-auto lg:h-auto  ">
 
-      <ul className="hidden sm:grid md:grid-cols-2 gap-4 sm:gap-12  w-full p-2 lg:flex lg:p-0 lg:mb-5 lg:w-max  lg:-translate-x-18  h-auto lg:mt-20 lg:gap-7 sm:mt-10">
+      <ul 
+      
+      className="hidden sm:grid md:grid-cols-2 gap-4 sm:gap-12  w-full p-2 lg:flex lg:p-0 lg:mb-5 lg:w-max    h-auto lg:mt-20 lg:gap-7 sm:mt-10">
         {manageSlider.map((feedback) => (
         <li  className="relative h-auto  lg:h-45 bg-gray-100 p-2 lg:p-1 lg:w-130">
           <span className="flex flex-col gap-2  items-center justify-center">

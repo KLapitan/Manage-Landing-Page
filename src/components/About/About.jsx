@@ -26,20 +26,20 @@ const manageAboutDesc = [
 ];
 
 return (
-<section className=" border h-auto w-full max-w-9xl flex flex-col items-center justify-center" >
+<section className="  h-auto w-full max-w-9xl flex flex-col items-center justify-center" >
 
-<div className="max-w-6xl w-full border ">
+<div className="max-w-6xl w-full  ">
 
-<div className="sm:flex sm:flex-row sm:h-auto sm:items-start sm:mt-20  sm:justify-between border-5 ">
-  <div className="flex items-center flex-col mb-5 border sm:items-start sm:p-2 sm:gap-7">
+<div className="sm:flex sm:flex-row sm:h-auto sm:items-start sm:mt-20  sm:justify-between   ">
+  <div className="flex items-center flex-col mb-5  sm:items-start sm:p-2 sm:gap-7">
 
   {/* mobile view header */}
-    <h2 className="text-2xl mt-21 sm:mt-0 text-center text-P-Blue950 font-bold tracking-tight leading-9 border w-auto sm:text-left  sm:hidden ">What’s different  <span className="text-2xl tracking-tighter inline-block">about Manage?</span></h2>
+    <h2 className="text-2xl mt-21 sm:mt-0 text-center text-P-Blue950 font-bold tracking-tight leading-9  w-auto sm:text-left  sm:hidden ">What’s different  <span className="text-2xl tracking-tighter inline-block">about Manage?</span></h2>
 
 {/* larger than mobile */}
-    <h2 className="hidden text-3xl w-100 text-left text-P-Blue950 font-Be-Vietnam-Pro font-bold border sm:inline-block">What's different about Manage?</h2>
+    <h2 className="hidden text-3xl lg:w-100 text-left text-P-Blue950 font-Be-Vietnam-Pro font-bold  sm:inline-block lg:mt-3 w-auto">What's different about Manage?</h2>
 
-    <span className="text-xs  text-center text-black/50  p-4 leading-6 sm:text-left sm:p-0 sm:w-69">  Manage provides all the functionality your team needs, without 
+    <span className="text-xs  text-center text-black/50  p-4 leading-6 sm:text-left sm:p-0 sm:w-69 lg:text-lg lg:w-95 lg:leading-7 font-light font-Be-Vietnam-Pro">  Manage provides all the functionality your team needs, without 
   the complexity. Our software is tailor-made for modern digital 
   product teams. </span>
 
@@ -47,7 +47,7 @@ return (
 
     <ul className=" h-auto flex flex-col gap-10 font-Be-Vietnam-Pro pl-3 sm:w-150 lg:py-4">
     {manageAboutDesc.map((item) =>(
-    <li className=" flex flex-col  gap-1 justify-start items-center  h-auto w-full  "> 
+    <li className=" flex flex-col  gap-2 justify-start items-center  h-auto w-full sm:w-auto   "> 
    
     
 
@@ -56,7 +56,7 @@ return (
     
      <span className="text-P-Blue950 text-sm tracking-tighter font-bold  ">{item.title}</span>
     </span>
-    <span className="text-xs text-black/50 text-left w-full leading-6 sm:text-sm sm:border sm:w-sm">{item.description}</span>
+    <span className="text-xs text-black/50 text-left w-full leading-6 sm:text-sm sm:w-auto lg:w-sm">{item.description}</span>
     </li>
     
     ))}
@@ -66,8 +66,8 @@ return (
 
   
   </div>
-<div className="h-auto w-full  flex flex-col gap-1  items-center  mt-10 mb-10 p-2  border lg:p-0 lg:mt-20">
-    <div className="w-full flex flex-col gap-17 items-center border ">
+<div className="h-auto w-full  flex flex-col gap-1  items-center  mt-10 mb-10 p-2  lg:p-0 lg:mt-20">
+    <div className="w-full flex flex-col gap-17 items-center  ">
     <h2 className="text-2xl  lg:text-4xl text-P-Blue950 font-bold"> What they’ve said </h2>
 
 

@@ -2,6 +2,8 @@ import { useState } from "react"
 import Button from "./button"
 import NavModal from "./navModal"
 import { useEffect } from "react"
+
+import { AnimatePresence } from "motion/react"
 const Nav = () => {
 
 const manageLinks =[" Pricing", 
@@ -58,8 +60,9 @@ return (
           <img src={`${mobileNavOpen ? "/images/icon-close.svg" : "/images/icon-hamburger.svg"}`} alt={`${mobileNavOpen ?"close-icon":"hamburger-icon"}`} className="sm:hidden" onClick={openModal} />
         </picture>
 
-
+        <AnimatePresence>
        { mobileNavOpen  && <NavModal links={manageLinks}/>}
+        </AnimatePresence>
       </div>
 
         <Button className=" hidden sm:inline-block bg-P-Orange400 shadow-md shadow-P-Orange400/75 rounded-full py-3  w-29 text-xs font-medium text-N-Graye50">Get Started</Button>

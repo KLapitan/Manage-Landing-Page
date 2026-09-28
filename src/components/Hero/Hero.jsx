@@ -1,5 +1,5 @@
 import Button from "../button";
-
+import { motion } from "motion/react";
 const Hero = () => {
 
 return(
@@ -11,9 +11,9 @@ return(
 
         {/* intro description */}
         <div className="flex flex-col items-center w-full  tracking-tight gap-2 p-1 sm:items-start sm:w-120 sm:gap-8">
-          <h2 className="text-center text-3xl font-bold text-P-Blue950 sm:text-left  md:text-4xl lg:text-5xl ;">Bring everyone together to build better products.</h2>
+          <motion.h2  initial={{scale:0}} animate={{scale:1}} className="text-center text-3xl font-bold text-P-Blue950 sm:text-left  md:text-4xl lg:text-5xl ;">Bring everyone together to build better products.</motion.h2>
 
-            <p className="text-sm text-center p-2 text-gray-400/80 leading-6 sm:text-left sm:w-xs"> Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</p>
+            <motion.p   className="text-sm text-center p-2 text-gray-400/80 leading-6 sm:text-left sm:w-xs"> Manage makes it simple for software teams to plan day-to-day tasks while keeping the larger team goals in view.</motion.p>
 
              <Button className="bg-P-Orange400 shadow-md shadow-P-Orange400/75 rounded-full py-3  w-29 text-xs font-medium text-N-Graye50 hidden sm:inline-block ">Get Started</Button>
 

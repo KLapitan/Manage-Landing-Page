@@ -14,7 +14,8 @@ return(
 
 
 
-<div className="absolute z-0 w-90 h-90  -top-10  -right-20  sm:w-190 sm:h-195  sm:-right-15 sm:-top-29 ">
+<div className="absolute z-0 w-90 h-90  -top-10  -right-20  sm:w-190 sm:h-195 sm:-right-70 sm: sm:-top-59 md:-right-70 md:-top-40 lg:-top-45 lg:w-212 lg:h-205 lg:-right-45 2xl:w-225 2xl:h-190  ">
+
 {/* bandage like pattern   */}
 <picture >
 <img src="/images/bg-tablet-pattern.svg" alt="pattern-logo" className="w-full h-full"/>

@@ -70,3 +70,5 @@ return (
 
 }
 export default Nav
+
+// try to make if user click nav bar if can makeit same on the page

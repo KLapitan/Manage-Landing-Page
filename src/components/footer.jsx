@@ -24,8 +24,8 @@ return(
   <section className="h-auto md:h-50 w-full max-w-7xl flex flex-col items-center justify-center gap-4 md:flex-row-reverse md:gap-10 md:justify-between p-7 md:p-2">
 
       {/* largeview inputand copyright */}
-      <div className="flex flex-col gap-8 border border-P-Orange400 items-end ">
-      <div className="flex flex-row  items-center justify-center w-auto  gap-1 h-auto p-2  border border-white md:items-start">
+      <div className="flex flex-col gap-8  items-end ">
+      <div className="flex flex-row  items-center justify-center w-auto  gap-1 h-auto p-2  md:items-start">
       <Input className={`border bg-N-Graye50 py-1 pl-3 px-2 rounded-full w-auto placeholder:text-xs placeholder:text-left md:w-40 lg:w-xs`}/>
 
       <Button className={`bg-P-Orange400 py-1 px-6 rounded-full`}>Go</Button>
